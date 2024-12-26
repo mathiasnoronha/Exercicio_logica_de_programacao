@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Arrays</h1>
+
+    <script>
+
+        const numeros = [12, 1, 23, 2, 8, 7, 43, 700, 89]
+       
+        let soma = 0
+
+        for(let i = 0; i < numeros.length; i++) {
+            let n = numeros[i]
+
+            soma = soma + n
+            // essa variável soma é a mesma de cima, seria diferente se eu estivesse criada outra variavel LET
+            // se fosse LET SOMA seria uma nova variavel, se caso criasse só existiria dentro do FOR
+        }
+
+        alert("A soma de todos os números é: " + soma)
+
+        
+    </script>
+</body>
+
+</html>

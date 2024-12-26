@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Metodos</h1>
+
+    <script>
+      
+      const produto = {
+        nome : "caneta",
+        quantidade : 10,
+        comprar: function(qtd) {
+            if(qtd > this.quantidade) {
+                console.log("quantidade insuficiente, quantidade em estoque é de: " + this.quantidade)
+                return null
+            }
+
+            console.log("comprar caneta")
+            this.quantidade -= qtd
+        }
+      }
+
+      console.log(produto)
+
+    //   comprar 3 canetas
+    //  produto.quantidade = 7
+    produto.quantidade -= 3
+
+    console.log(produto)
+
+    //   comprar 14 canetas
+    produto.quantidade -= 14
+
+    produto.quantidade = 10
+
+    produto.comprar(3)
+    produto.comprar(23)
+
+    console.log(produto)
+
+    // para trabalhar com objeto não tem como usar o arrow functions (=>)
+    // sempre a functions declaretion
+
+    // ORIENTAÇÃO OBJETO
+    
+    </script>
+</body>
+</html>

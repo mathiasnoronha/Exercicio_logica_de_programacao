@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <!--  defer funciona dentro do script se ele estive no introducao.js -->
+
+</head>
+
+<body>
+
+    <h1 id="titulo">Um título qualquer</h1>
+    <p id="paragrafo">este é apenas um parágrafo contendo <i>um texto em itálico qualquer</i></p>
+
+    <input type="text" id="user" value="valor preenchido">
+
+    <hr>
+
+    <h2>Lista de tarefas</h2>
+
+    <ul>
+        <ol id="listaTarefas">
+        <li>Aprender CSS</li>
+        <li>Aprender JavaScript</li>
+        <li>Aprender DOM profundamente</li>
+        <li>Criar algo</li>
+    </ol>
+    </ul>
+    <script>
+        document.getElementById("titulo").textContent = "titulo alterado"
+
+        const lista = document.getElementById("listaTarefas")
+        let novaTarefa = "Aplicar à vagas de emprego"
+
+        lista.innerHTML = lista.innerHTML + "<li>teste</li>"
+    </script>
+
+    <!-- let user = document.getElementByld("user (essa parte sempre será o id que quero)")
+     user: (ele vai mostrar a parte do HTML)
+     user.value
+     "valor preenchido"
+     posso colcoar um valor tambem colocando ex: user.value = "nome alterado" -->
+    <!-- document.getElementById("titulo").textContent = "titulo alterado" -->
+     <!-- .textContent mostra o que está inserido no html
+      ou melhor o .innerHtml= -->
+</body>
+
+</html>

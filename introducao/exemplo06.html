@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Boolean, Number e String- typeof</h1>
+
+    <script>
+        // console.log("Olá, Povoo!")
+
+        let mensagem= "Olá! Eu sou uma mensagem de texto"
+        console.log(mensagem)
+
+        // podemos colocar a aspa simple do texto que quero colocar como mensagem especifica a barra ignora as aspas
+
+        console.log(typeof 0)
+        console.log(typeof "0")
+        console.log(typeof String(0))
+
+        let isValid = true
+
+        console.log(typeof isValid)
+
+        console.log(Boolean("0"))
+        // true
+        console.log(Boolean(0))
+        // false
+        console.log(Boolean(undefined))
+        // false
+        console.log(Boolean(null))
+        // false
+        console.log(Boolean(""))
+        // false
+        console.log(Boolean(NaN))
+        // false
+
+
+        let noDeclaretion = null
+        // pode ser undefined
+        console.log(noDeclaretion)
+        noDeclaretion = 0
+        console.log(noDeclaretion)
+
+        let n= parseFloat("a")
+        console.log(n)
+        console.log(typeof n)
+        console.log(typeof "-----")
+        console.log(typeof undefined)
+        console.log(typeof null)
+        console.log(typeof 0)
+        console.log(typeof "")
+        console.log(typeof true)
+
+        console.log(typeof (10 .toString()))
+
+
+    </script>
+</body>
+
+</html>

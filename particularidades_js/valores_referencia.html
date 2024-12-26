@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos primitivos</title>
+</head>
+
+<body>
+    <h1>tipos primitivos</h1>
+
+    <p>Em Javascripit, há dois tipos de dados prossiveis:
+        primitivos(passado por valores) e objetos (passado por referência)
+    </p>
+    <ul>
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolen</li>
+        <li>null</li>
+        <li>undefined</li>
+        <li>Symbol (ES2015)</li>
+    </ul>
+
+    <script>
+
+        let parametro = 10
+
+        function teste(parametro) {
+            console.log("parametro interno funcão teste é: ", ++parametro)
+        }
+
+        teste(parametro)
+        // valor 10 de cima (externo)
+
+        console.log("parametro externo", parametro)
+
+        const arr2 = [4,5,6]
+        // ax124
+
+        const arr = [1, 2, 3]
+        // endereço na memoria ax123
+
+        function adicionarNaArray(valor, arr) {
+            arr[arr.length] = valor
+        }
+
+        function limpaArray(arr) {
+            arr.length = 0
+        }
+
+        adicionarNaArray("novo valor", arr)
+
+        console.log(arr)
+
+        limpaArray(arr)
+
+        console.log(arr)
+
+        const obj = {nome: "Daniel"}
+
+        function adicionaPromptEmObjeto(promp,valor,obj) {
+            if(obj[promp] === undefined) {
+            obj[promp] = valor
+        }
+        }
+
+        adicionaPromptEmObjeto("email", "eu@servidor.com", obj)
+
+        console.log(obj)
+
+    </script>
+</body>
+
+</html>

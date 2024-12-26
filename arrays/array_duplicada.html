@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+
+    <script>
+
+       let numeros = [4, 9 , 1 , 2, 23, 45, 8, 10, 7]
+       let numeros2 = []
+
+       for (let i = 0; i < numeros.length; i++) {
+        let numero = numeros[i] * 2
+
+        // numeros2[numeros2.length] = numero
+        numeros2.push(numero, "Esses são os valores multiplicado por 2 pelo valor ´numeros´")
+        // metodo push() *empurra* um novo valor no final do array
+       }
+
+       console.log(numeros2)
+
+    </script>
+</body>
+</html>
